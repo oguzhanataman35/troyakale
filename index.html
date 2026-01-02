@@ -3,161 +3,158 @@
 <head>
 <meta charset="UTF-8">
 <title>Troya Kale Yol Yardım | Çanakkale</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Montserrat,sans-serif;
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:#000;
+color:#fff;
 }
-
-body{background:#000;color:#fff}
 
 /* HERO */
 .hero{
-  background:url("hero.png") center/cover no-repeat;
-  min-height:90vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  position:relative;
+background:url("hero.png") center/cover no-repeat;
+text-align:center;
+padding:80px 20px;
 }
-.hero::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,.7);
-}
-.hero-content{
-  position:relative;
-  z-index:2;
-  max-width:900px;
-  padding:20px;
-}
-
 .hero img{
-  width:160px;
-  margin-bottom:25px;
+width:180px;
+margin-bottom:15px;
 }
-
 .hero h1{
-  font-size:48px;
-  color:#ff2a2a;
-  font-weight:900;
+color:#ff1e1e;
+font-size:38px;
+margin:10px 0;
 }
-
 .hero p{
-  margin:15px 0 30px;
-  font-size:20px;
+font-size:18px;
+opacity:.9;
 }
 
+/* Buttons */
 .buttons{
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  flex-wrap:wrap;
+margin-top:20px;
+display:flex;
+justify-content:center;
+gap:15px;
 }
-
 .btn{
-  padding:16px 40px;
-  border-radius:40px;
-  font-size:18px;
-  font-weight:bold;
-  text-decoration:none;
+padding:15px 35px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+color:white;
+font-size:18px;
 }
-
-.call{background:#ff2a2a;color:#fff;}
-.whatsapp{background:#25D366;color:#fff;}
+.call{background:#ff1e1e;}
+.whatsapp{background:#1ed760;}
 
 /* SERVICES */
 .services{
-  padding:80px 20px;
-  max-width:1200px;
-  margin:auto;
-  text-align:center;
+padding:70px 5%;
+text-align:center;
 }
 .services h2{
-  color:#ff2a2a;
-  font-size:36px;
-  margin-bottom:50px;
+color:#ff1e1e;
+font-size:32px;
+margin-bottom:40px;
 }
 .grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
 }
-
 .card{
-  background:#111;
-  border-radius:20px;
-  overflow:hidden;
-  box-shadow:0 0 25px rgba(255,0,0,.25);
-  transition:.3s;
+background:#111;
+border-radius:15px;
+padding:15px;
+box-shadow:0 0 20px rgba(255,0,0,.3);
+transition:.3s;
 }
-.card:hover{transform:scale(1.05)}
-
+.card:hover{transform:scale(1.05);}
 .card img{
-  width:100%;
-  height:200px;
-  object-fit:cover;
+width:100%;
+border-radius:10px;
+height:170px;
+object-fit:cover;
 }
 .card h3{
-  padding:20px;
-  font-size:22px;
-  color:#ff2a2a;
+margin-top:15px;
+color:#ff1e1e;
 }
 
 /* FOOTER */
 footer{
-  background:#000;
-  padding:50px 20px;
-  text-align:center;
-  border-top:2px solid #ff2a2a;
+border-top:2px solid #ff1e1e;
+text-align:center;
+padding:30px;
+font-size:16px;
 }
-footer h3{color:#ff2a2a}
-footer p{margin:8px 0;font-size:17px}
+footer p{margin:6px 0;}
 </style>
 </head>
 
 <body>
 
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-content">
-    <img src="logo.png">
-    <h1>TROYA KALE YOL YARDIM</h1>
-    <p>7/24 Oto Kurtarma & Sigortalı Çekici — Çanakkale</p>
+<img src="logo.png">
+<h1>TROYA KALE YOL YARDIM</h1>
+<p>7/24 Oto Kurtarma & Sigortalı Çekici — Çanakkale</p>
 
-    <div class="buttons">
-      <a class="btn call" href="tel:05332206317">📞 Hemen Ara</a>
-      <a class="btn whatsapp" href="https://wa.me/905332206317">💬 WhatsApp</a>
-    </div>
-  </div>
+<div class="buttons">
+<a class="btn call" href="tel:05332206317">📞 Hemen Ara</a>
+<a class="btn whatsapp" href="https://wa.me/905332206317">💬 WhatsApp</a>
+</div>
 </section>
 
+<!-- SERVICES -->
 <section class="services">
-  <h2>Hizmetlerimiz</h2>
-  <div class="grid">
-<div class="card"><img src="kurtarma.png"><h3>Oto Kurtarma</h3></div>
-<div class="card"><img src="cekici.png"><h3>Oto Çekici</h3></div>
-<div class="card"><img src="aku.png"><h3>Akü Takviye</h3></div>
-<div class="card"><img src="lastik.png"><h3>Lastik Değişimi</h3></div>
-<div class="card"><img src="sigorta.png"><h3>Sigortalı Çekici</h3></div>
-<div class="card"><img src="yakit.png"><h3>Yakıt Bitmesi Yardımı</h3></div>
+<h2>Hizmetlerimiz</h2>
 
-  </div>
+<div class="grid">
+
+<div class="card">
+<img src="kurtarma.png">
+<h3>Oto Kurtarma</h3>
+</div>
+
+<div class="card">
+<img src="cekici.png">
+<h3>Oto Çekici</h3>
+</div>
+
+<div class="card">
+<img src="aku.png">
+<h3>Akü Takviye</h3>
+</div>
+
+<div class="card">
+<img src="lastik.png">
+<h3>Lastik Değişimi</h3>
+</div>
+
+<div class="card">
+<img src="sigorta.png">
+<h3>Sigortalı Çekici</h3>
+</div>
+
+<div class="card">
+<img src="yakit.png">
+<h3>Yakıt Bitmesi Yardımı</h3>
+</div>
+
+</div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  <h3>Berkay Karagöz</h3>
-  <p>📞 0533 220 6317</p>
-  <p>✉️ otokurtarma17@icloud.com</p>
-  <p>📍 Çanakkale ve çevresi</p>
-  <p>Troya Kale Group Oto Kurtarma Yol Yardım</p>
+<p><strong>Berkay Karagöz</strong></p>
+<p>📞 0533 220 6317</p>
+<p>📧 otokurtarma17@icloud.com</p>
+<p>📍 Çanakkale ve çevresi</p>
+<p>Troya Kale Group Oto Kurtarma Yol Yardım</p>
 </footer>
 
 </body>
