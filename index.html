@@ -8,231 +8,205 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background: #000;
-  color: #fff;
+body{
+margin:0;
+font-family:'Montserrat',sans-serif;
+background:#000;
+color:#fff;
 }
 
 /* HERO */
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)),
-  url("https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2") center/cover no-repeat;
-  padding: 80px 20px;
-  text-align: center;
+.hero{
+background:linear-gradient(rgba(0,0,0,.85),rgba(0,0,0,.95)),
+url("https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2") center/cover;
+padding:90px 20px;
+text-align:center;
 }
 
-.hero img {
-  width: 160px;
-  margin-bottom: 20px;
+.hero img{
+width:150px;
+margin-bottom:20px;
+filter:drop-shadow(0 0 15px orange);
 }
 
-.hero h1 {
-  font-size: 38px;
-  margin: 10px 0;
-  color: #ff2a2a;
+.hero h1{
+color:#ff2a2a;
+font-size:42px;
+margin:10px 0;
 }
 
-.hero p {
-  color: #ccc;
-  font-size: 18px;
+.hero p{
+color:#ddd;
+font-size:18px;
 }
 
-/* Buttons */
-.buttons {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+.buttons{
+margin-top:30px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
 }
 
-.btn {
-  padding: 16px 40px;
-  border-radius: 40px;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 600;
-  transition: 0.3s;
+.btn{
+padding:16px 40px;
+border-radius:40px;
+font-size:18px;
+text-decoration:none;
+font-weight:700;
 }
 
-.call {
-  background: #ff2a2a;
-  color: white;
-}
-
-.call:hover {
-  background: #ff4d4d;
-}
-
-.whatsapp {
-  background: #25d366;
-  color: white;
-}
-
-.whatsapp:hover {
-  background: #1ebe5d;
-}
+.call{background:#ff2a2a;color:white;}
+.whatsapp{background:#25d366;color:white;}
 
 /* SERVICES */
-#services {
-  padding: 80px 20px;
-  background: #000;
-  text-align: center;
+#services{
+padding:80px 20px;
+text-align:center;
 }
 
-#services h2 {
-  color: #ff2a2a;
-  font-size: 36px;
-  margin-bottom: 50px;
+#services h2{
+color:#ff2a2a;
+font-size:36px;
+margin-bottom:40px;
 }
 
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: auto;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+max-width:1200px;
+margin:auto;
 }
 
-.service-card {
-  background: #111;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 0 25px rgba(255,0,0,0.25);
-  transition: 0.3s;
+.card{
+background:#111;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 0 25px rgba(255,0,0,.3);
+transition:.3s;
 }
 
-.service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 40px rgba(255,0,0,0.5);
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 40px rgba(255,0,0,.6);
 }
 
-.service-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
 }
 
-.service-card h3 {
-  color: #ff2a2a;
-  margin: 15px 0;
+.card h3{
+color:#ff2a2a;
+margin:15px 0;
 }
 
-.service-card ul {
-  list-style: none;
-  padding: 0 20px 25px;
-  text-align: left;
+.card ul{
+list-style:none;
+padding:0 20px 25px;
+text-align:left;
 }
 
-.service-card ul li {
-  padding: 8px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+.card ul li{
+padding:8px 0;
+border-bottom:1px solid rgba(255,255,255,.1);
 }
 
 /* FOOTER */
-.footer {
-  padding: 50px 20px;
-  text-align: center;
-  background: #000;
-  border-top: 2px solid red;
-}
-
-.footer h3 {
-  color: #ff2a2a;
-}
-
-.footer p {
-  margin: 8px 0;
+footer{
+border-top:2px solid red;
+padding:40px;
+text-align:center;
 }
 </style>
 </head>
 
 <body>
 
-<section class="hero">
-  <img src="https://i.imgur.com/5GQbZ9U.png" alt="Troya Kale Logo">
-  <h1>TROYA KALE YOL YARDIM</h1>
-  <p>7/24 Oto Kurtarma & Sigortalı Çekici — Çanakkale</p>
+<div class="hero">
+<img src="https://i.ibb.co/3FX0JdK/troyakale.png">
+<h1>TROYA KALE YOL YARDIM</h1>
+<p>7/24 Oto Kurtarma & Sigortalı Çekici — Çanakkale</p>
 
-  <div class="buttons">
-    <a href="tel:05332206317" class="btn call">📞 Hemen Ara</a>
-    <a href="https://wa.me/905332206317" class="btn whatsapp">💬 WhatsApp</a>
-  </div>
-</section>
+<div class="buttons">
+<a href="tel:05332206317" class="btn call">📞 Hemen Ara</a>
+<a href="https://wa.me/905332206317" class="btn whatsapp">💬 WhatsApp</a>
+</div>
+</div>
 
 <section id="services">
-  <h2>Hizmetlerimiz</h2>
+<h2>Hizmetlerimiz</h2>
 
-  <div class="service-grid">
+<div class="grid">
 
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1601933470096-0e34634ffcde">
-      <h3>Oto Kurtarma</h3>
-      <ul>
-        <li>Kaza sonrası kurtarma</li>
-        <li>Yolda kalan araçlar</li>
-        <li>Çamur ve hendek kurtarma</li>
-      </ul>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1601933470096-0e34634ffcde">
+<h3>Oto Kurtarma</h3>
+<ul>
+<li>Kaza sonrası kurtarma</li>
+<li>Çamur – hendek</li>
+<li>Yolda kalan araç</li>
+</ul>
+</div>
 
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1613214149922-f1809c99b414">
-      <h3>Oto Çekici</h3>
-      <ul>
-        <li>Binek & ticari araç</li>
-        <li>Motosiklet taşıma</li>
-        <li>Şehir içi & şehirler arası</li>
-      </ul>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1613214149922-f1809c99b414">
+<h3>Oto Çekici</h3>
+<ul>
+<li>Binek & ticari</li>
+<li>Motosiklet</li>
+<li>Uzun yol taşıma</li>
+</ul>
+</div>
 
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2">
-      <h3>Akü Takviye</h3>
-      <ul>
-        <li>Bitmiş akü çalıştırma</li>
-        <li>Yerinde destek</li>
-      </ul>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2">
+<h3>Akü Takviye</h3>
+<ul>
+<li>Yerinde çalıştırma</li>
+<li>7/24 destek</li>
+</ul>
+</div>
 
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1615919376610-f9b2e2b57f2f">
-      <h3>Lastik Değişimi</h3>
-      <ul>
-        <li>Patlak lastik</li>
-        <li>Mobil ekip</li>
-      </ul>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1615919376610-f9b2e2b57f2f">
+<h3>Lastik Değişimi</h3>
+<ul>
+<li>Patlak lastik</li>
+<li>Mobil ekip</li>
+</ul>
+</div>
 
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1597008641621-7fa0b4dd3b07">
-      <h3>Sigortalı Çekici</h3>
-      <ul>
-        <li>Tam hasar güvencesi</li>
-        <li>Kapalı kasa taşıma</li>
-      </ul>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1597008641621-7fa0b4dd3b07">
+<h3>Sigortalı Çekici</h3>
+<ul>
+<li>Hasar güvencesi</li>
+<li>Kapalı kasa</li>
+</ul>
+</div>
 
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1597008640953-20c4f14f7c7d">
-      <h3>Yakıt Bitmesi</h3>
-      <ul>
-        <li>Yerinde yakıt desteği</li>
-        <li>7/24 hizmet</li>
-      </ul>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1597008640953-20c4f14f7c7d">
+<h3>Yakıt Bitmesi</h3>
+<ul>
+<li>Yerinde yakıt</li>
+<li>Hızlı destek</li>
+</ul>
+</div>
 
-  </div>
+</div>
 </section>
 
-<div class="footer">
-  <h3>Berkay Karagöz</h3>
-  <p>📞 0533 220 6317</p>
-  <p>📧 otokurtarma17@icloud.com</p>
-  <p>📍 Çanakkale ve çevresi</p>
-  <p>Troya Kale Group Oto Kurtarma Yol Yardım</p>
-</div>
+<footer>
+<h3>Berkay Karagöz</h3>
+<p>📞 0533 220 6317</p>
+<p>📧 otokurtarma17@icloud.com</p>
+<p>📍 Çanakkale ve çevresi</p>
+<p>Troya Kale Group Oto Kurtarma Yol Yardım</p>
+</footer>
 
 </body>
 </html>
